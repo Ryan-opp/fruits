@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotorsportX - Sign Up</title>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWdOXQbF5MMMvcswtGKoWOePeUPuMxZhRrA&s">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*  styling  the form */
+        .signup-form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #ffffff;
+        }
+
+        .signup-form input[type="text"],
+        .signup-form input[type="email"],
+        .signup-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .signup-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .signup-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .signin-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .signin-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .signin-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Nav Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="news.html">news</a></li>
+                <li><a href="history.html">history</a></li>
+                <li><a href="teams.html">teams</a></li>
+                <li><a href="event.html">events</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="login.html">Login</a></li>
+          
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sign Up Form -->
+    <section id="signup">
+        <h1>Create Your MotorsportX Account</h1>
+        <p>Fill in the details below to sign up.</p>
+        <form class="signup-form" action="submit-signup.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <!-- Sign In Link -->
+        <div class="signin-link">
+            <p>Already have an account? <a href="login.html">Click here</a></p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Motorsport Central. All rights reserved.</p>
+        <p>Follow us on <a href="#">Instagram</a>, <a href="#">Twitter</a>, <a href="#">Facebook</a></p>
+    </footer>
+
+</body>
+</html>

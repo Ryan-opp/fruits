@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorsport Central - Login</title>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWdOXQbF5MMMvcswtGKoWOePeUPuMxZhRrA&s">
+   
+    <style>
+        /* Additional CSS for Remember Me checkbox */
+        .remember-me {
+            display: flex;
+            align-items: center;
+        }
+
+        .remember-me input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .signin-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .signin-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .signin-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+
+      <!-- Header with Navigation -->
+      <header>
+        <div class="logo">
+          <h1>Motorsports Central</h1>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="news.html">news</a></li>
+            <li><a href="history.html">history</a></li>
+            <li><a href="teams.html">teams</a></li>
+            <li><a href="event.html">events</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="login.html">Login</a></li>
+        
+          </ul>
+        </nav>
+      </header>
+
+    <!-- Login -->
+    <section id="login">
+        <h1>Login to MotorsportX</h1>
+        <p>Please enter your credentials to access your account.</p>
+        <table>
+            <form action="submit-login.php" method="POST">
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username" name="username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="remember-me">
+                        <input type="checkbox" id="rememberMe" name="rememberMe">
+                        <label for="rememberMe">Remember Me</label>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit">Login</button>
+                    </td>
+                </tr>
+            </form>
+        </table>
+
+        <!-- Sign In Link -->
+        <div class="signin-link">
+            <p>New to MotorsportX? <a href="signup.html">Sign up here</a></p>
+        </div>
+
+          <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Motorsports Central | All Rights Reserved</p>
+      <div class="social-media">
+        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+    </section>
+    <hr>
